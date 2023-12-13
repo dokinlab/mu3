@@ -1247,10 +1247,11 @@ img, video {
   left: 2px;
 }
 
-.breadcrumbs {
+.breadcrumbs-wrapper {
   margin-top: 40px;
 }
-.breadcrumbs ul {
+
+.breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1283,7 +1284,7 @@ img, video {
   color: #838383;
 }
 .breadcrumbs a:hover {
-  color: #B9AB91;
+  color: #ABD7A0;
 }
 .breadcrumbs a:after {
   content: "/";
