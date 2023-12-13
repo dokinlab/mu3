@@ -1,0 +1,77 @@
+.callback {
+	margin-top: 100px;
+	.container {
+		padding: 0;
+		@media (min-width: $tablet) {
+			padding: 0 20px;
+		}
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		background: #141414;
+		color: $white;
+		border-radius: 20px;
+		padding: 30px 20px;
+		@media (min-width: $tablet) {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding: 30px 80px;
+			gap: 0;
+		}
+		@media (min-width: $desktop) {
+			padding: 30px 60px;
+		}
+	}
+	&__title {
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		@media (min-width: $laptop) {
+			font-size: 35px;
+		}
+	}
+	&__subtitle {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		@media (min-width: $laptop) {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+	}
+	.input {
+		width: 100%;
+		@media (min-width: $tablet) {
+			width: calc(50% - 10px);
+			margin-bottom: 20px;
+		}
+		@media (min-width: $desktop) {
+			width: calc(25% - 15px);
+		}
+	}
+	.checkbox {
+		margin-top: 10px;
+		@media (min-width: $tablet) {
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.button {
+		width: 100%;
+		height: 60px;
+		font-weight: 600;
+		@media (min-width: $tablet) {
+			width: calc(50% - 14px);
+			margin-bottom: 20px;
+		}
+		@media (min-width: $desktop) {
+			width: calc(25% - 15px);
+		}
+	}
+}

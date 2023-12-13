@@ -1,0 +1,89 @@
+.capitalization {
+	margin-top: 100px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin: 0 -20px;
+		@media (min-width: $tablet) {
+			margin: 0;
+		}
+		@media (min-width: $desktop) {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+	}
+	&__one {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		background: $white;
+		border-radius: 20px;
+		padding: 30px 20px;
+		@media (min-width: $desktop) {
+			width: calc(50% - 15px);
+		}
+		@media (min-width: $desktop) {
+			padding: 40px;
+		}
+		&-title {
+			font-size: 25px;
+			font-weight: 500;
+			@media (min-width: $tablet) {
+				font-size: 45px;
+				line-height: 1.2;
+			}
+		}
+		&-subtitle {
+			font-size: 18px;
+			color: #878787;
+			margin-top: -10px;
+		}
+		&-list {
+			margin: 0;
+			padding: 0;
+			margin-top: 10px;
+			padding-left: 20px;
+		}
+		.button {
+			width: 100%;
+			height: 60px;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+			}
+		}
+	}
+	&__two {
+		position: relative;
+		@media (min-width: $desktop) {
+			width: calc(50% - 15px);
+		}
+		.swiper {
+			z-index: 1;
+		}
+		&-navs {
+			position: absolute;
+			z-index: 2;
+			top: 20px;
+			right: 20px;
+		}
+		&-photo {
+			display: flex;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
+			img {
+				width: 100%;
+				aspect-ratio: 32/30;
+				@media (min-width: $tablet) {
+					aspect-ratio: 73/50;
+				}
+				@media (min-width: $desktop) {
+					aspect-ratio: 60/52;
+				}
+			}
+		}
+	}
+}

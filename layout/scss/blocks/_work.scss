@@ -1,0 +1,236 @@
+.work {
+	margin: 0 -20px;
+	margin-top: 100px;
+	@media (min-width: $tablet) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $desktop) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__one {
+		margin-top: 40px;
+		@media (min-width: $desktop) {
+			width: calc(100% - 430px);
+		}
+		&-body {
+			display: flex;
+			flex-direction: column;
+			background: $white;
+			border-radius: 20px 20px 0 0;
+			padding: 40px 20px;
+			gap: 30px;
+			&-item {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				@media (min-width: $tablet) {
+					display: grid;
+					grid-template-columns: 1.6fr 1fr;
+					gap: 20px;
+				}
+				@media (min-width: $laptop) {
+					grid-template-columns: 2fr 1fr;
+				}
+			}
+			&-item + &-item {
+				border-top: 1px solid #E5E5E5;
+				padding-top: 30px;
+				.work__one-body-right b {
+					height: auto;
+				}
+			}
+			&-row {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				&_1 {
+					width: 120px;
+					@media (min-width: $laptop) {
+						width: 150px;
+					}
+				}
+				&_2 {
+					width: 60px;
+					height: 80px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				&_3 {
+					width: calc(100% - 180px);
+					@media (min-width: $laptop) {
+						width: calc(100% - 210px);
+					}
+				}
+				&-input {
+					width: 100%;
+					height: 80px;
+					border-color: #e5e5e5;
+					font-size: 25px;
+					@media (min-width: $laptop) {
+						font-size: 30px;
+					}
+				}
+				&-label {
+					text-align: center;
+					color: #878787;
+					margin-top: 20px;
+				}
+			}
+			&-list {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				line-height: 1.2;
+				max-width: 450px;
+				div {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+				span {
+					color: #878787;
+				}
+				span + span {
+					color: $black;
+				}
+			}
+			&-left {
+				display: flex;
+				flex-direction: column;
+			}
+			&-right {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 20px;
+				color: #878787;
+				line-height: 1;
+				b {
+					font-weight: 600;
+					font-size: 40px;
+					display: flex;
+					align-items: center;
+					@media (min-width: $tablet) {
+						height: 80px;
+					}
+				}
+				span {
+					color: $black;
+				}
+				i  {
+					font-style: normal;
+					font-size: 18px;
+					font-weight: 500;
+				}
+			}
+		}
+		&-total {
+			border-radius: 0 0 20px 20px;
+			background: $black;
+			padding: 40px 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			line-height: 1;
+			gap: 20px;
+			@media (min-width: $laptop) {
+				padding: 30px 20px;
+			}
+			b {
+				font-size: 50px;
+				font-weight: 600;
+				color: $white;
+			}
+			i {
+				font-size: 18px;
+				font-weight: 500;
+				color: #878787;
+				font-style: normal;
+			}
+		}
+	}
+	&__two {
+		padding: 40px 60px;
+		border-radius: 20px;
+		background: $white;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1.2fr;
+		}
+		@media (min-width: $laptop) {
+			display: flex;
+		}
+		@media (min-width: $desktop) {
+			width: 400px;
+			padding-top: 60px;
+		}
+		&-icon {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			color: #ededed;
+			@media (min-width: $tablet) {
+				justify-content: flex-start;
+			}
+			@media (min-width: $laptop) {
+				justify-content: center;
+			}
+			svg {
+				width: 100%;
+				max-width: 200px;
+				aspect-ratio: 200/129;
+			}
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 20px;
+			@media (min-width: $tablet) {
+				text-align: left;
+			}
+			@media (min-width: $laptop) {
+				text-align: center;
+			}
+			span {
+				margin-top: 30px;
+				&:first-child {
+					@media (min-width: $tablet) {
+						margin-top: 0;
+					}
+					@media (min-width: $laptop) {
+						margin-top: 30px;
+					}
+				}
+			}
+			b {
+				font-weight: 600;
+			}
+		}
+		.button {
+			width: 100%;
+			margin-top: 30px;
+			height: 60px;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+			}
+			@media (min-width: $laptop) {
+				max-width: none;
+			}
+			@media (min-width: $desktop) {
+				margin-top: 60px;
+			}
+		}
+	}
+}

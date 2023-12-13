@@ -1,0 +1,87 @@
+.since {
+	margin-top: 100px;
+	&__subtitle {
+		@media (min-width: $tablet) {
+			padding-left: 80px;
+		}
+	}
+	&__body {
+		margin: 0 -20px;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: $tablet) {
+			margin-left: 0;
+			margin-right: 0;
+			gap: 30px;
+		}
+		@media (min-width: $laptop) {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+	}
+	&__one {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		background: $black;
+		position: relative;
+		min-height: 350px;
+		border-radius: 20px;
+		overflow: hidden;
+		@media (min-width: $laptop) {
+			width: calc(50% - 15px);
+		}
+		&-photo {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			@media (min-width: $tablet) {
+				width: auto;
+				aspect-ratio: 1/1;
+				left: 50px;
+			}
+		}
+		.b4nn3r__label {
+			margin: 0;
+			left: auto;
+			transform: translate(0,0);
+			right: 60px;
+		}
+	}
+	&__two {
+		display: flex;
+		flex-direction: column;
+		background: $white;
+		border-radius: 20px;
+		padding: 30px 20px;
+		gap: 30px;
+		@media (min-width: $tablet) {
+			padding: 40px 60px;
+		}
+		@media (min-width: $laptop) {
+			width: calc(50% - 15px);
+		}
+		@media (min-width: $desktop) {
+			padding: 40px 80px;
+		}
+		span {
+			font-size: 20px;
+			@media (min-width: $tablet) {
+				max-width: 450px;
+			}
+		}
+		.button {
+			height: 60px;
+			width: 100%;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+			}
+		}
+	}
+}

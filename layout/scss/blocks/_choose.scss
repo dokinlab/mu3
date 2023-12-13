@@ -1,0 +1,113 @@
+.choose {
+	margin-top: 100px;
+	@media (min-width: $laptop) {
+		margin-top: 60px;
+	}
+	.container {
+		padding: 0;
+		@media (min-width: $tablet) {
+			padding: 0 20px;
+		}
+	}
+	&__body {
+		@media (min-width: $laptop) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__left {
+		background: $black;
+		border-radius: 20px;
+		overflow: hidden;
+		@media (min-width: $laptop) {
+			width: calc(100% - 320px);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+	}
+	&__right {
+		display: none;
+		width: 290px;
+		@media (min-width: $laptop) {
+			display: flex;
+		}
+	}
+	&__item {
+		background: $black;
+		border-radius: 20px;
+		overflow: hidden;
+		position: relative;
+		padding: 30px 20px;
+		color: $white;
+		@media (min-width: $tablet) {
+			padding: 40px 30px;
+		}
+		@media (min-width: $desktop) {
+			padding: 40px 50px;
+		}
+		> div {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			@media (min-width: $tablet) {
+				gap: 40px;
+			}
+		}
+		&-navs {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			z-index: 2;
+		}
+		&-man {
+			height: 240px;
+			object-fit: contain;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			@media (min-width: $tablet) {
+				height: 310px;
+				right: 90px;
+			}
+			@media (min-width: $desktop) {
+				right: auto;
+				left: 50%;
+			}
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 18px;
+			position: relative;
+			z-index: 1;
+			max-width: 210px;
+			@media (min-width: $tablet) {
+				font-size: 25px;
+				max-width: 370px;
+			}
+			span {
+				color: $green;
+			}
+		}
+		&-text {
+			color: #878787;
+			position: relative;
+			z-index: 1;
+			max-width: 210px;
+			@media (min-width: $tablet) {
+				font-size: 18px;
+				max-width: 310px;
+			}
+		}
+		.button {
+			position: relative;
+			z-index: 1;
+			font-weight: 600;
+			margin-top: 60px;
+			max-width: 210px;
+			@media (min-width: $tablet) {
+				margin-top: 40px;
+			}
+		}
+	}
+}

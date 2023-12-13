@@ -1,0 +1,103 @@
+.simple {
+	margin-top: 100px;
+	overflow: hidden;
+	&__toper {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		.navs {
+			display: none;
+			@media (min-width: $tablet) {
+				display: flex;
+			}
+			@media (min-width: $desktop) {
+				display: none;
+			}
+		}
+	}
+	.swiper {
+		max-width: 290px;
+		overflow: visible;
+		margin: 0;
+		margin-top: 30px;
+		@media (min-width: $tablet) {
+			width: calc(100% - 120px);
+			max-width: none;
+		}
+		@media (min-width: $laptop) {
+			width: 100%;
+		}
+		&-wrapper {
+			align-items: stretch;
+		}
+		&-slide {
+			height: auto;
+			display: flex;
+		}
+	}
+	&__item {
+		background: $white;
+		border-radius: 20px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		&_black {
+			background: $black;
+			color: $white;
+		}
+	}
+	&__numb {
+		background: #F4F4F4;
+		border-radius: 10px;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1;
+		font-weight: 600;
+		font-size: 35px;
+	}
+	&__icon {
+		border-radius: 10px;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		background: $light;
+		overflow: hidden;
+	    img {
+	      width: 44px;
+	      height: 57px;
+	    }
+	}
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-top: 30px;
+	}
+	&__text {
+		font-size: 14px;
+		margin-top: 20px;
+		b {
+			font-weight: 600;
+			font-size: 20px;
+		}
+	}
+	&__button {
+		width: 60px;
+		height: 60px;
+		padding: 0;
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

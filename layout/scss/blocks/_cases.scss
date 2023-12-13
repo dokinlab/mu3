@@ -1,0 +1,24 @@
+.cases {
+	margin-top: 100px;
+	overflow: hidden;
+	&__toper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		.navs {
+			display: none;
+			@media (min-width: $tablet) {
+				display: flex;
+			}
+		}
+	}
+	.swiper {
+		max-width: 280px;
+		margin: 0;
+		overflow: visible;
+		margin-top: 30px;
+		@media (min-width: $tablet) {
+			max-width: none;
+		}
+	}
+}

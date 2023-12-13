@@ -1,0 +1,73 @@
+.experience {
+	margin-top: 100px;
+	@media (min-width: $desktop) {
+		overflow: hidden;
+	}
+	&__subtitle {
+		padding-left: 80px;
+	}
+	&__navs {
+		display: none;
+		align-items: flex-start;
+		justify-content: flex-end;
+		@media (min-width: $tablet) {
+			display: flex;
+		}
+	}
+	&__swiper {
+		margin: 0 -20px;
+		overflow: hidden;
+		padding: 0 20px;
+		margin-top: 40px;
+		@media (min-width: $tablet) {
+			margin-top: 20px;
+		}
+		@media (min-width: $desktop) {
+			overflow: visible;
+		}
+		.swiper {
+			margin: 0;
+			width: calc(100% - 40px);
+			overflow: visible;
+			@media (min-width: $tablet) {
+				width: calc(100% - 120px);
+			}
+			@media (min-width: $desktop) {
+				width: 100%;
+			}
+		}
+	}
+	&__item {
+		width: 100%;
+		background: $white;
+		min-height: 350px;
+		border-radius: 20px;
+		padding: 30px 20px;
+		&-icon {
+			background: #f4f4f4;
+			border-radius: 10px;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			svg {
+				width: 36px;
+				height: 36px;
+			}
+		}
+		&-title {
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 24px;
+			b {
+				font-size: 35px;
+				font-weight: 600;
+			}
+		}
+		&-text {
+			color: #878787;
+			margin-top: 12px;
+		}
+	}
+}

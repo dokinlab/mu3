@@ -1,0 +1,136 @@
+.price {
+	margin-top: 100px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		background: $white;
+		border-radius: 20px;
+		margin: 0 -20px;
+		padding: 30px 20px;
+		@media (min-width: $tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 0;
+			margin: 0;
+			padding: 40px 30px;
+		}
+		@media (min-width: $desktop) {
+			padding: 40px;
+			padding-right: 110px;
+		}
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: $tablet) {
+			width: calc(100% - 300px);
+			padding-right: 60px;
+			max-width: 580px;
+		}
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: $tablet) {
+			gap: 40px;
+			width: 300px;
+		}
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 25px;
+		@media (min-width: $laptop) {
+			font-size: 35px;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-align: center;
+		line-height: 1;
+		@media (min-width: $tablet) {
+			text-align: left;
+		}
+		b {
+			font-weight: 600;
+			font-size: 40px;
+		}
+	}
+	&__button {
+		font-weight: 600;
+		height: 60px;
+	}
+	&__table {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		background: $white;
+		border-radius: 20px;
+		margin: 0 -20px;
+		padding: 30px 20px;
+		margin-top: 60px;
+		@media (min-width: $tablet) {
+			padding: 30px;
+		}
+		@media (min-width: $laptop) {
+			padding: 40px;
+		}
+		&-body {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			span {
+				@media (min-width: $tablet) {
+					max-width: 330px;
+				}
+				@media (min-width: $laptop) {
+					max-width: 520px;
+				}
+			}
+			div {
+				@media (min-width: $tablet) {
+					max-width: 500px;
+				}
+			}
+		}
+		&-wrapper {
+			border-top: 1px solid #e5e5e5;
+		}
+		&-item {
+			border-bottom: 1px solid #e5e5e5;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			div {
+				padding: 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				@media (min-width: $tablet) {
+					padding: 20px;
+					padding-left: 40px;
+				}
+			}
+			div + div {
+				border-left: 1px solid #e5e5e5;
+				@media (min-width: $tablet) {
+					padding-left: 20px;
+					padding-right: 40px;
+				}
+			}
+			b {
+				font-weight: 600;
+			}
+			a {
+				color: #878787;
+				display: none;
+				@media (min-width: $tablet) {
+					display: inline;
+				}
+			}
+		}
+	}
+}

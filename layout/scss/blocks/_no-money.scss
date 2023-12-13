@@ -1,0 +1,96 @@
+.no-money {
+	margin-top: 100px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: $laptop) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	&__one {
+		background: $black url(../images/case.jpg) no-repeat 100% 100%;
+		background-size: auto 180px;
+		color: $white;
+		padding: 30px 20px;
+		border-radius: 20px;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $tablet) {
+			background-size: auto 250px;
+		}
+		b {
+			font-weight: 600;
+			font-size: 25px;
+			max-width: 370px;
+			@media (min-width: $desktop) {
+				font-size: 35px;
+			}
+		}
+		span {
+			margin-top: 20px;
+			font-size: 18px;
+			max-width: 370px;
+			@media (min-width: $desktop) {
+				font-size: 20px;
+			}
+		}
+		.button {
+			height: 60px;
+			margin-top: 60px;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+			}
+			@media (min-width: $desktop) {
+				margin-top: 30px;
+			}
+		}
+	}
+	&__two {
+		background: $black;
+		color: $white;
+		padding: 30px 20px;
+		border-radius: 20px;
+		min-height: 300px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		&-item {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			i {
+				width: 60px;
+				height: 60px;
+				border-radius: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: $white;
+				color: $black;
+			}
+			svg {
+				width: 34px;
+				height: 34px;
+			}
+			b {
+				font-weight: 600;
+				font-size: 18px;
+				@media (min-width: $tablet) {
+					font-size: 20px;
+					max-width: 230px;
+				}
+			}
+			span {
+				color: #878787;
+				font-size: 14px;
+				@media (min-width: $tablet) {
+					font-size: 16px;
+					max-width: 230px;
+				}
+			}
+		}
+	}
+}

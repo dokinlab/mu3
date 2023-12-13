@@ -1,0 +1,118 @@
+.hard {
+	margin-top: 100px;
+	&__body {
+		margin: 0 -20px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 30px;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px 15px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		@media (min-width: $desktop) {
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 30px;
+		}
+	}
+	&__item {
+		background: $white;
+		border-radius: 20px;
+		padding: 30px 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 40px;
+		position: relative;
+		@media (min-width: $desktop) {
+			padding: 30px 40px;
+		}
+		&_1 {
+			@media (min-width: $desktop) {
+				grid-area: 1 / 1 / 2 / 6;
+				padding-right: 400px;
+			}
+			&:after {
+				@media (min-width: $desktop) {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 2;
+					background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+				}
+			}
+		}
+		&_2 {
+			@media (min-width: $desktop) {
+				grid-area: 1 / 6 / 2 / 9;
+			}
+		}
+		&_3 {
+			@media (min-width: $desktop) {
+				grid-area: 2 / 1 / 3 / 5;
+			}
+		}
+		&_4 {
+			@media (min-width: $desktop) {
+				grid-area: 2 / 5 / 3 / 9;
+			}
+		}
+		&_black {
+			background: $black;
+			color: $white;
+			.text {
+				color: $white;
+			}
+			.list span {
+				color: $white;
+			}
+		}
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		position: relative;
+		z-index: 3;
+	}
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		@media (min-width: $laptop) {
+			font-size: 25px;
+		}
+	}
+	&__text {
+		span {
+			color: $black;
+			font-size: 18px;
+		}
+		b {
+			font-weight: 600;
+		}
+	}
+	&__pic {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		@media (min-width: $desktop) {
+			display: block;
+		}
+	}
+	&__button {
+		font-weight: 600;
+		height: 60px;
+	}
+}

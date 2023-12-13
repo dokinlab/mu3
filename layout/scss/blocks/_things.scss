@@ -1,0 +1,227 @@
+.things {
+	overflow: hidden;
+	margin-top: 20px;
+	@media (min-width: $tablet) {
+		margin-top: 40px;
+	}
+	@media (min-width: $desktop) {
+		margin-top: 60px;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 70px;
+		@media (min-width: $tablet) {
+			gap: 40px;
+		}
+		@media (min-width: $desktop) {
+			gap: 0;
+			flex-direction: row;
+		}
+	}
+	.swiper {
+		max-width: 210px;
+		margin: 0;
+		overflow: visible;
+		@media (min-width: $tablet) {
+			max-width: none;
+			overflow: hidden;
+		}
+		@media (min-width: $desktop) {
+			max-width: none;
+			width: 690px;
+		}
+		&-wrapper {
+			@media (min-width: $tablet) {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 50px;
+			}
+			@media (min-width: $desktop) {
+				gap: 30px;
+			}
+		}
+		&-slide {
+			@media (min-width: $tablet) {
+				width: 100% !important;
+				margin: 0 !important;
+			}
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 20px;
+		border-radius: 20px;
+		aspect-ratio: 21/15;
+		background: $white;
+		justify-content: center;
+		&-one {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			font-weight: 600;
+			svg {
+				width: 25px;
+				height: 25px;
+				color: $light;
+			}
+		}
+		&-two {
+			text-align: center;
+			color: #878787;
+		}
+	}
+	&_view-2 {
+		margin-top: 100px;
+	}
+	&_view-2 .swiper {
+		width: 100%;
+		margin-top: 40px;
+		max-width: 280px !important;
+		@media (min-width: $tablet) {
+			max-width: none !important;
+		}
+		&-wrapper {
+			@media (min-width: $tablet) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			@media (min-width: $laptop) {
+				gap: 30px;
+			}
+			@media (min-width: $desktop) {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+		&-slide {
+			@media (min-width: $tablet) {
+				width: 100% !important;
+				margin: 0 !important;
+				display: flex;
+			}
+		}
+	}
+	&_view-2 .swiper &__item {
+		gap: 20px;
+		aspect-ratio: auto;
+		@media (min-width: $tablet) {
+			width: 100%;
+			justify-content: flex-start;
+		}
+		&-one {
+			svg {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		&-two {
+			color: $black;
+			max-width: 210px;
+			margin: 0 auto;
+		}
+	}
+	&__numbers {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		line-height: 1;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 0.92fr 2fr;
+			gap: 50px;
+		}
+		@media (min-width: $desktop) {
+			width: calc(100% - 690px);
+			padding-left: 110px;
+			display: flex;
+			flex-direction: column;
+			gap: 80px;
+			padding-top: 20px;
+		}
+		&-left {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+			@media (min-width: $tablet) {
+				display: flex;
+				flex-direction: column;
+				gap: 60px;
+			}
+			@media (min-width: $desktop) {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+			}
+		}
+		&-right {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			@media (min-width: $tablet) {
+				gap: 50px;
+			}
+		}
+		&-one {
+			display: flex;
+			align-items: flex-start;
+			gap: 10px;
+			b {
+				font-size: 35px;
+				font-weight: 600;
+				@media (min-width: $tablet) {
+					font-size: 50px;
+				}
+			}
+			span {
+				color: #878787;
+				font-size: 16px;
+				font-weight: 500;
+				@media (min-width: $tablet) {
+					font-size: 18px;
+					line-height: 1.4;
+				}
+			}
+		}
+		&-two {
+			color: #878787;
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			b {
+				font-size: 35px;
+				font-weight: 600;
+			}
+			span {
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+	&__ {
+
+	}
+}

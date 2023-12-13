@@ -1,0 +1,185 @@
+.converse {
+	margin-top: 100px;
+	&__wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: $tablet) {
+			margin-top: 60px;
+			gap: 30px;
+		}
+		@media (min-width: $laptop) {
+			gap: 0;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__body {
+		font-size: 20px;
+		background: #fff url(../images/peoples.jpg) no-repeat 100% 100%;
+		background-size: auto 190px;
+		border-radius: 20px;
+		padding: 30px 20px;
+		padding-bottom: 200px;
+		margin: 0 -20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		@media (min-width: $tablet) {
+			margin: 0;
+			background-image: url(../images/peoples-2.jpg);
+			background-size: contain;
+			background-position: 100% 50%;
+			padding: 0 60px;
+			aspect-ratio: 73/25;
+			align-items: flex-start;
+			justify-content: center;
+			text-align: left;
+		}
+		@media (min-width: $laptop) {
+			width: 450px;
+			background-image: url(../images/peoples.jpg);
+			background-position: 50% 100%;
+			background-size: auto 350px;
+			padding: 40px 60px;
+			padding-bottom: 360px;
+			justify-content: flex-start;
+		}
+		@media (min-width: $desktop) {
+			background-position: 100% 100%;
+			background-size: auto 250px;
+			padding-bottom: 260px;
+		}
+		span {
+			max-width: 300px;
+		}
+		b {
+			font-weight: 600;
+		}
+	}
+	&__swiper {
+		margin: 0 -20px;
+		border-radius: 20px;
+		padding: 30px 20px;
+		padding-bottom: 35px;
+		background: $black;
+		color: $white;
+		@media (min-width: $tablet) {
+			margin: 0;
+			padding: 30px;
+		}
+		@media (min-width: $laptop) {
+			width: calc(100% - 480px);
+		}
+		&-navs {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: relative;
+			@media (min-width: $tablet) {
+				min-height: 220px;
+			}
+		}
+		&-title {
+			width: 100%;
+			font-size: 25px;
+			font-weight: 600;
+			max-width: 350px;
+			padding-right: 120px;
+			min-height: 40px;
+		}
+		&-text {
+			width: 100%;
+			margin-top: 20px;
+			font-size: 18px;
+			max-width: 300px;
+			@media (min-width: $tablet) {
+				font-size: 20px;
+				margin-top: 30px;
+			}
+		}
+		&-price {
+			width: 100%;
+			color: $light;
+			font-size: 45px;
+			font-weight: 600;
+			margin-top: 20px;
+		}
+		&-things {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+			margin-top: 30px;
+			max-width: 300px;
+			@media (min-width: $tablet) {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			@media (min-width: $laptop) {
+				position: relative;
+			}
+			@media (min-width: $desktop) {
+				position: absolute;
+			}
+			&-item {
+				border: none;
+				background: none;
+				padding: 0;
+				position: relative;
+				text-align: left;
+				display: flex;
+				flex-direction: column;
+				line-height: 1.4;
+				&-pic {
+					width: 130px;
+					aspect-ratio: 1/1;
+					object-fit: cover;
+					border-radius: 20px;
+				}
+				&-label {
+					width: 30px;
+					height: 30px;
+					background: $green;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: $white;
+					border-radius: 10px;
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					svg {
+						width: 12px;
+						height: 12px;
+					}
+				}
+				&-name {
+					margin-top: 20px;
+				}
+				&-link {
+					font-size: 14px;
+					color: #838383;
+					margin-top: 6px;
+				}
+			}
+		}
+		&-button {
+			margin-top: 30px;
+			width: 100%;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+				height: 60px;
+				margin-top: 50px;
+			}
+		}
+	}
+}

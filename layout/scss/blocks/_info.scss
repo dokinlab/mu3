@@ -1,0 +1,304 @@
+.info {
+	margin-top: 100px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		position: relative;
+		@media (min-width: $laptop) {
+			gap: 40px;
+		}
+	}
+	&__warning {
+		padding: 30px 20px;
+		padding-top: 24px;
+		background: $white;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		position: relative;
+		@media (min-width: $tablet) {
+			padding: 30px;
+			padding-left: 120px;
+		}
+		&-title {
+			display: flex;
+			align-items: flex-start;
+			svg {
+				width: 40px;
+				height: 35px;
+				color: $light;
+				position: relative;
+				top: 6px;
+				@media (min-width: $tablet) {
+					position: absolute;
+					top: 30px;
+					left: 30px;
+					width: 60px;
+					height: 52px;
+				}
+			}
+			span {
+				width: calc(100% - 40px);
+				font-size: 20px;
+				padding-left: 20px;
+				line-height: 1.2;
+				color: #212121;
+				@media (min-width: $tablet) {
+					font-size: 25px;
+					width: 100%;
+					padding: 0;
+				}
+			}
+		}
+		&-text {
+			font-weight: 300;
+		}
+	}
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@media (min-width: $laptop) {
+			gap: 40px;
+		}
+	}
+	&__bullets {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 30px;
+		}
+		@media (min-width: $desktop) {
+			height: 535px;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 0;
+		}
+		&-item {
+			display: flex;
+			align-items: flex-start;
+			&:nth-of-type(1) {
+				@media (min-width: $tablet) {
+					grid-area: 1 / 1 / 2 / 2;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 1 / 1 / 2 / 3;
+				}
+			}
+			&:nth-of-type(2) {
+				@media (min-width: $tablet) {
+					grid-area: 2 / 1 / 3 / 2;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 1 / 3 / 2 / 4;
+				}
+			}
+			&:nth-of-type(3) {
+				@media (min-width: $tablet) {
+					grid-area: 1 / 2 / 3 / 3;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 1 / 4 / 2 / 5;
+				}
+			}
+			&:nth-of-type(4) {
+				@media (min-width: $tablet) {
+					grid-area: 3 / 1 / 4 / 2;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 2 / 1 / 3 / 3;
+				}
+			}
+			&:nth-of-type(5) {
+				@media (min-width: $tablet) {
+					grid-area: 4 / 1 / 5 / 2;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 3 / 1 / 4 / 3;
+				}
+			}
+			&:nth-of-type(6) {
+				@media (min-width: $tablet) {
+					grid-area: 3 / 2 / 5 / 3;
+				}
+				@media (min-width: $desktop) {
+					grid-area: 4 / 1 / 5 / 3;
+				}
+			}
+		}
+		&-icon {
+			width: 50px;
+			height: 50px;
+			border-radius: 10px;
+			background: $white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&-text {
+			width: calc(100% - 50px);
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			font-size: 18px;
+			padding-left: 20px;
+			@media (min-width: $desktop) {
+				max-width: 390px;
+			}
+			b {
+				font-size: 16px;
+				font-weight: 400;
+				color: #878787;
+			}
+			a:hover {
+				color: $green;
+			}
+		}
+	}
+	&__gallery {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+		@media (min-width: $desktop) {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+		}
+		.navs {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			z-index: 2;
+		}
+		.swiper {
+			z-index: 1;
+			width: 100%;
+			margin: 0;
+		}
+		&-item {
+			width: 100%;
+			aspect-ratio: 32/30;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			@media (min-width: $tablet) {
+				aspect-ratio: unset;
+				height: 400px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+			}
+		}
+	}
+	&__map {
+		display: flex;
+		flex-direction: column;
+		height: 300px;
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+		@media (min-width: $tablet) {
+			height: 400px;
+		}
+		> * {
+			display: block;
+			border: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__bottom {
+		background: $white;
+		border-radius: 20px;
+		padding: 30px 20px;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $tablet) {
+			padding: 30px;
+		}
+		@media (min-width: $laptop) {
+			padding: 40px;
+		}
+		&-one {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			@media (min-width: $tablet) {
+				padding-left: 240px;
+			}
+			@media (min-width: $laptop) {
+				max-width: 850px;
+			}
+		}
+		&-pic {
+			width: 160px;
+			height: 160px;
+			object-fit: cover;
+			border-radius: 10px;
+			@media (min-width: $tablet) {
+				width: 210px;
+				height: 210px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		&-subtitle {
+			margin-top: 20px;
+			color: #878787;
+			@media (min-width: $tablet) {
+				margin-top: 0;
+			}
+		}
+		&-title {
+			font-size: 25px;
+			margin-top: 10px;
+			line-height: 1.2;
+		}
+		&-text {
+			margin-top: 20px;
+		}
+		&-two {
+			margin-top: 30px;
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 30px;
+			@media (min-width: $tablet) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			@media (min-width: $desktop) {
+				grid-template-columns: 1fr 1fr 1.4fr 1.4fr;
+			}
+		}
+		&-item {
+			display: flex;
+			flex-direction: column;
+			font-weight: 500;
+			color: #878787;
+			b {
+				color: $light;
+				font-weight: 600;
+				font-size: 35px;
+			}
+		}
+	}
+}

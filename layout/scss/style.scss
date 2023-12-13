@@ -1,0 +1,119 @@
+@import "blocks/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(swiper.css);
+@import url(jquery.fancybox.css);
+@import url(jquery.select2.css);
+
+$tablet:   768px;
+$laptop:   992px;
+$desktop: 1290px;
+
+$min-width: 360px;
+$circe: 'Inter', sans-serif;
+
+$transition: 0.3s;
+
+$black:            #141414;
+$white:            #FFFFFF;
+$green:            #0AC964;
+$green-dark:       #1E9054;
+$light:            #ABD7A0;
+
+$rotate180: rotate(180deg);
+.rotate180{transform:rotate(180deg)}
+
+$shadow: 0px 0px 30px rgba(0, 0, 0, 0.10);
+
+@mixin lines($numb) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $numb;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder{color:#878787;opacity:1}
+:-ms-input-placeholder{color:#878787;opacity:1}
+::-ms-input-placeholder{color:#878787;opacity:1}
+::-moz-placeholder{color:#878787;opacity:1}
+::placeholder{color:#878787;opacity:1}
+:focus::-webkit-input-placeholder{color:transparent}
+:focus:-ms-input-placeholder{color:transparent}
+:focus::-ms-input-placeholder{color:transparent}
+:focus::-moz-placeholder{color:transparent}
+:focus::placeholder{color:transparent}
+
+::selection{background:$light;color:$black;}
+
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{border-radius:999px;background:#E5E5E5}
+::-webkit-scrollbar-thumb{border-radius:999px;background:$light}
+
+a, button, select{color:inherit}
+a{text-decoration:none}
+a, input[type=button], input[type=submit], button {
+  transition: $transition;
+  cursor: pointer;
+}
+
+.br,img,svg{display:block}
+img,video{object-fit:cover}
+.float-left{float:left}
+.float-right{float:right}
+.clear-both {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.nav-actived,
+.search-actived,
+.profile-actived,
+.cities-actived,
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@import "blocks/global";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/content";
+@import "blocks/slideshow";
+@import "blocks/things";
+@import "blocks/solution";
+@import "blocks/callback";
+@import "blocks/simple";
+@import "blocks/tasks";
+@import "blocks/choose";
+@import "blocks/cases";
+@import "blocks/team";
+@import "blocks/reviews";
+@import "blocks/clients";
+@import "blocks/logos";
+@import "blocks/faqs";
+@import "blocks/b4nn3r";
+@import "blocks/hard";
+@import "blocks/calc";
+@import "blocks/price";
+@import "blocks/consult";
+@import "blocks/numbers";
+@import "blocks/support";
+@import "blocks/leader";
+@import "blocks/experience";
+@import "blocks/profit";
+@import "blocks/converse";
+@import "blocks/work";
+@import "blocks/result";
+@import "blocks/no-money";
+@import "blocks/capitalization";
+@import "blocks/since";
+@import "blocks/platform";
+@import "blocks/info";

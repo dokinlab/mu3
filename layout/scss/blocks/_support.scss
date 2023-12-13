@@ -1,0 +1,57 @@
+.support {
+	margin-top: 100px;
+	&__body {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+			margin-top: 60px;
+		}
+	}
+	&__item {
+		background: $light;
+		padding: 20px;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $tablet) {
+			padding: 30px 20px;
+		}
+		@media (min-width: $desktop) {
+			padding: 40px;
+			min-height: 220px;
+		}
+	}
+	&__name {
+		display: flex;
+		align-items: flex-start;
+		b {
+			font-weight: 600;
+			font-size: 18px;
+			width: calc(100% - 60px);
+			padding-left: 20px;
+			@media (min-width: $tablet) {
+				padding-left: 30px;
+				font-size: 20px;
+			}
+			@media (min-width: $desktop) {
+				font-size: 25px;
+				padding-left: 40px;
+			}
+		}
+	}
+	&__text {
+		margin-top: 20px;
+		@media (min-width: $desktop) {
+			padding-left: 100px;
+			margin-top: 0;
+		}
+	}
+	&__item:hover .nav__thing-face {
+		transform: scale(1.2);
+	}
+}

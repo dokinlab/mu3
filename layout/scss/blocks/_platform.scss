@@ -1,0 +1,72 @@
+.platform {
+	margin-top: 100px;
+	padding-bottom: 40px;
+	&__subtitle {
+		@media (min-width: $tablet) {
+			padding-left: 80px;
+		}
+	}
+	&__body {
+		margin: 0 -20px;
+		margin-top: 30px;
+		background: $black;
+		border-radius: 20px;
+		padding: 30px 20px;
+		color: $white;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		position: relative;
+		@media (min-width: $tablet) {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 40px;
+			padding-right: 400px;
+		}
+		@media (min-width: $laptop) {
+			padding-right: 600px;
+		}
+		@media (min-width: $desktop) {
+			padding: 40px 80px;
+			padding-right: 630px;
+		}
+		b {
+			font-size: 25px;
+			font-weight: 600;
+			@media (min-width: $laptop) {
+				max-width: 370px;
+			}
+		}
+		span {
+			font-size: 20px;
+			line-height: 1.6;
+			@media (min-width: $laptop) {
+				max-width: 370px;
+			}
+		}
+		img {
+			width: 100%;
+			@media (min-width: $tablet) {
+				width: 340px;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translate(0,-50%);
+			}
+			@media (min-width: $laptop) {
+				width: 480px;
+				right: 50px;
+			}
+			@media (min-width: $desktop) {
+				right: 100px;
+			}
+		}
+		.button {
+			width: 100%;
+			height: 60px;
+			@media (min-width: $tablet) {
+				max-width: 260px;
+			}
+		}
+	}
+}
