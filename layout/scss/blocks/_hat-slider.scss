@@ -1,0 +1,116 @@
+.hat {
+	overflow: hidden;
+	background: $black;
+	border-radius: 20px;
+	@media (min-width: $tablet) {
+		background: none;
+		border-radius: 0;
+	}
+	.swiper {
+		margin: 0 -20px;
+		@media (min-width: $tablet) {
+			margin: 0;
+			background: $black;
+			border-radius: 20px;
+		}
+	}
+	&__item {
+		color: $white;
+		padding: 40px 20px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		overflow: hidden;
+		position: relative;
+		@media (min-width: $tablet) {
+			align-items: flex-start;
+			gap: 40px;
+			padding: 30px;
+		}
+		@media (min-width: $desktop) {
+			padding: 60px 80px;
+		}
+		.navs {
+			position: absolute;
+			top: 40px;
+			right: 20px;
+			@media (min-width: $desktop) {
+				top: 20px;
+			}
+		}
+	}
+	&__title {
+		max-width: calc(100% - 130px);
+		font-weight: 600;
+		font-size: 25px;
+		margin-top: -6px;
+		@media (min-width: $tablet) {
+			max-width: 340px;
+			font-size: 35px;
+			line-height: 1.3;
+		}
+		@media (min-width: $laptop) {
+			max-width: 380px;
+		}
+	}
+	&__text {
+		color: #E5E5E5;
+		@media (min-width: $tablet) {
+			max-width: 340px;
+			font-size: 18px;
+			margin-top: -10px;
+		}
+		@media (min-width: $laptop) {
+			max-width: 380px;
+		}
+	}
+	&__pic {
+		margin: 0 auto;
+		max-width: 100%;
+		@media (min-width: $tablet) {
+			margin: 0;
+			height: 300px;
+			position: absolute;
+			top: 80px;
+			right: -80px;
+		}
+		@media (min-width: $laptop) {
+			top: 40px;
+			right: 80px;
+		}
+		@media (min-width: $desktop) {
+			height: auto;
+			top: 0;
+			right: 120px;
+		}
+	}
+	&__button {
+		@media (min-width: $tablet) {
+			min-width: 216px;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		font-size: 14px;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		div {
+			background: $white;
+			border-radius: 20px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			color: $black;
+		}
+		b {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+}

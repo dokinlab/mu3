@@ -1,0 +1,114 @@
+.goals {
+	margin-top: 100px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 30px;
+		@media (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+		}
+	}
+	&__item {
+		background: #F4F4F4;
+		padding: 30px 20px;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: space-between;
+		@media (min-width: $laptop) {
+			padding: 40px;
+		}
+		@media (min-width: $desktop) {
+			flex-direction: row;
+			padding: 30px;
+			padding-left: 40px;
+		}
+		> div {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			@media (min-width: $tablet) {
+				align-items: flex-start;
+			}
+			@media (min-width: $desktop) {
+				width: calc(100% - 190px);
+				padding-right: 20px;
+				padding-top: 10px;
+			}
+		}
+		&-title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		&-text {
+			font-size: 14px;
+		}
+		&-button {
+			min-width: 210px;
+		}
+		&-pic {
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 20px;
+			background: $white;
+			@media (min-width: $laptop) {
+				padding: 20px;
+			}
+			@media (min-width: $desktop) {
+				width: 190px;
+				padding: 10px;
+			}
+			img {
+				height: 80px;
+				@media (min-width: $laptop) {
+					height: 150px;
+				}
+				@media (min-width: $desktop) {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	&__item-2 {
+		background: $black url(../images/men-3.png) no-repeat 50% 100%;
+		background-size: auto 240px;
+		min-height: 360px;
+		padding: 40px 20px;
+		padding-top: 30px;
+		color: $white;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (min-width: $laptop) {
+			background-size: auto 300px;
+		}
+		@media (min-width: $desktop) {
+			background-size: auto calc(100% - 20px);
+			background-position: calc(100% - 50px) 100%;
+			min-height: 250px;
+			align-items: flex-start;
+			padding: 30px;
+			padding-left: 40px;
+			padding-top: 40px;
+		}
+		&-title {
+			font-size: 25px;
+			font-weight: 600;
+			text-align: center;
+			@media (min-width: $desktop) {
+				text-align: left;
+			}
+		}
+		&-button {
+			min-width: 210px;
+		}
+	}
+}

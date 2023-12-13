@@ -10,13 +10,28 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
-		gap: 70px;
+		gap: 30px;
+		background: #f4f4f4;
+		margin: 0 -20px;
+		padding: 30px 20px;
+		border-radius: 20px;
 		@media (min-width: $tablet) {
 			gap: 40px;
+			margin: 0;
+		}
+		@media (min-width: $laptop) {
+			padding: 40px;
 		}
 		@media (min-width: $desktop) {
 			gap: 0;
 			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+	.big-title {
+		width: 100%;
+		@media (min-width: $desktop) {
+			margin-bottom: 40px;
 		}
 	}
 	.swiper {
@@ -35,10 +50,7 @@
 			@media (min-width: $tablet) {
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
-				gap: 50px;
-			}
-			@media (min-width: $desktop) {
-				gap: 30px;
+				gap: 10px;
 			}
 		}
 		&-slide {
@@ -55,8 +67,12 @@
 		padding: 20px;
 		border-radius: 20px;
 		aspect-ratio: 21/15;
-		background: $white;
 		justify-content: center;
+		background: $black;
+		color: $white;
+		&.brown {
+			background: $main;
+		}
 		&-one {
 			display: flex;
 			flex-direction: column;
@@ -66,12 +82,11 @@
 			svg {
 				width: 25px;
 				height: 25px;
-				color: $light;
+				color: $yellow;
 			}
 		}
 		&-two {
 			text-align: center;
-			color: #878787;
 		}
 	}
 	&_view-2 {
@@ -128,7 +143,7 @@
 		flex-direction: column;
 		gap: 40px;
 		line-height: 1;
-		@media (min-width: $tablet) {
+		@media (min-width: $laptop) {
 			display: grid;
 			grid-template-columns: 0.92fr 2fr;
 			gap: 50px;
@@ -145,7 +160,7 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 20px;
-			@media (min-width: $tablet) {
+			@media (min-width: $laptop) {
 				display: flex;
 				flex-direction: column;
 				gap: 60px;
@@ -160,7 +175,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
-			@media (min-width: $tablet) {
+			@media (min-width: $laptop) {
 				gap: 50px;
 			}
 		}
@@ -199,29 +214,5 @@
 				font-weight: 500;
 			}
 		}
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
-	}
-	&__ {
-
 	}
 }

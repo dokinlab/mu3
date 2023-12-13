@@ -1,0 +1,88 @@
+.study {
+	margin-top: 100px;
+    overflow: hidden;
+    .swiper {
+        margin: 0 -20px;
+        border-radius: 20px;
+        background: #F4F4F4;
+        @media (min-width: $tablet) {
+            margin: 0;
+        }
+    }
+    &__item {
+        padding: 30px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (min-width: $laptop) {
+            gap: 40px;
+            padding: 40px;
+            height: 450px;
+            padding-left: 650px;
+            justify-content: center;
+        }
+        @media (min-width: $desktop) {
+            padding-left: 720px;
+        }
+        .navs {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            @media (min-width: $laptop) {
+                top: 20px;
+                right: 20px;
+            }
+        }
+        img {
+            width: 100%;
+            border: 10px solid $white;
+            border-radius: 20px;
+            @media (min-width: $tablet) {
+                order: 4;
+            }
+            @media (min-width: $laptop) {
+                width: 570px;
+                height: 370px;
+                position: absolute;
+                top: 40px;
+                left: 40px;
+            }
+        }
+    }
+    &__title {
+        width: calc(100% - 130px);
+        font-size: 25px;
+        font-weight: 600;
+        @media (min-width: $tablet) {
+            width: 100%;
+            max-width: 320px;
+            order: 1;
+        }
+        @media (min-width: $laptop) {
+            font-size: 35px;
+            max-width: 260px;
+            line-height: 1.2;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        color: #878787;
+        @media (min-width: $tablet) {
+            max-width: 260px;
+            order: 2;
+        }
+        @media (min-width: $laptop) {
+            font-size: 20px;
+            margin-top: -10px;
+        }
+    }
+    &__button {
+        @media (min-width: $tablet) {
+            padding: 0;
+            width: 100%;
+            max-width: 190px;
+            order: 3;
+        }
+    }
+}

@@ -98,7 +98,7 @@
 			}
 		}
 		&-button {
-			background: $green;
+			background: $main;
 			border-radius: 20px;
 			position: absolute;
 			top: 0;
@@ -111,7 +111,7 @@
 			font-weight: 600;
 			color: $white;
 			&:hover {
-				background: $green-dark;
+				background: $main;
 			}
 		}
 	}

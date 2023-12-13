@@ -61,7 +61,7 @@
 			padding-left: 40px;
 		}
 		&-numb {
-			background: $light;
+			background: $main;
 			border-radius: 10px;
 			width: 60px;
 			height: 60px;
@@ -98,7 +98,7 @@
 				text-decoration: underline;
 				font-weight: 800;
 				&:hover {
-					color: $light;
+					color: $main;
 				}
 			}
 		}
@@ -118,7 +118,7 @@
 		position: relative;
 		padding: 30px 20px;
 		border-radius: 20px;
-		background: $light;
+		background: $main;
 		padding-top: 100px;
 		@media (min-width: $tablet) {
 			padding: 30px;

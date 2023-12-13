@@ -19,7 +19,7 @@
 				text-align: right;
 			}
 			u {
-				color: $green;
+				color: $main;
 				font-weight: 600;
 				font-size: 35px;
 				@media (min-width: $laptop) {
@@ -111,7 +111,7 @@
 			span {
 				width: 20px;
 				height: 20px;
-				background: $green;
+				background: $main;
 				display: flex;
 				justify-content: center;
 				align-items: center;

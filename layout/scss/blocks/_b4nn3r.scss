@@ -160,7 +160,7 @@
 		svg {
 			width: 20px;
 			height: 20px;
-			color: $green;
+			color: $main;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -169,7 +169,7 @@
 	&__face {
 		width: 60px;
 		height: 60px;
-		background: $light;
+		background: $main;
 		border-radius: 10px;
 		display: flex;
 		justify-content: center;

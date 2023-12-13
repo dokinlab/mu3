@@ -14,7 +14,7 @@
 			width: 100%;
 		};
 		&-item {
-			background: $white;
+			background: #f4f4f4;
 			padding: 20px;
 			display: flex;
 			flex-direction: column;
@@ -57,7 +57,7 @@
 				> b {
 					width: 40px;
 					height: 40px;
-					background: #F4F4F4;
+					background: $white;
 					border-radius: 10px;
 					display: flex;
 					justify-content: center;
@@ -92,7 +92,8 @@
 					}
 				}
 				&:hover > b {
-					background: $light;
+					background: $main;
+					color: $white;
 				}
 				&.active > b span {
 					display: none;

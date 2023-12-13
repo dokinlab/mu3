@@ -1,10 +1,13 @@
 .toper {
 	display: none;
-	background: $black;
-	color: #919397;
+	background: #f4f4f4;
+	color: $black;
 	position: relative;
+	height: 52px;
 	@media (min-width: $tablet) {
 		display: block;
+		background: $white;
+		border-bottom: 1px solid #e5e5e5;
 	}
 	&__body {
 		display: flex;
@@ -24,7 +27,7 @@
 		border-radius: 10px;
 		color: $black;
 		&:hover {
-			background: $light;
+			background: $main;
 		}
 		@media (min-width: $tablet) {
 			display: none;
@@ -65,7 +68,7 @@
 				transform: rotate(90deg);
 			}
 			span {
-				color: $light;
+				color: $main;
 				font-weight: 500;
 				text-decoration: underline;
 			}
@@ -103,7 +106,7 @@
 			gap: 8px;
 			a {
 				&:hover {
-					color: $green;
+					color: $main;
 				}
 			}
 			b {
@@ -135,10 +138,10 @@
 			padding: 0;
 			border: none;
 			&:hover {
-				color: $white;
+				color: $black;
 			}
 			&.active {
-				color: $light;
+				color: $main;
 			}
 			svg {
 				width: 20px;
@@ -193,12 +196,13 @@
 		justify-content: center;
 		align-items: center;
 		padding: 0;
-		background: $black;
+		background: $main;
 		border: none;
 		border-radius: 10px;
 		color: $white;
 		&:hover {
-			background: $light;
+			background: $yellow;
+			color: $black;
 		}
 		&.active {
 			background: #F4F4F4;
@@ -244,7 +248,7 @@
 		border-radius: 10px;
 		color: $black;
 		&:hover {
-			background: $light;
+			background: $main;
 		}
 		@media (min-width: $tablet) {
 			display: none;
@@ -256,7 +260,6 @@
 	}
 	&__menu {
 		display: flex;
-		justify-content: center;
 		align-items: center;
 		margin-top: 25px;
 		width: 100%;
@@ -272,7 +275,7 @@
 		&-item {
 			font-weight: 500;
 			&:hover {
-				color: $green;
+				color: $main;
 			}
 			@media (min-width: $tablet) {
 				font-size: 18px;
@@ -285,7 +288,7 @@
 		align-items: center;
 		font-weight: 500;
 		&:hover {
-			color: $green;
+			color: $main;
 		}
 		@media (min-width: $desktop) {
 			display: flex;
@@ -346,13 +349,13 @@
 				padding: 0;
 				border: none;
 				background: none;
-				color: $light;
+				color: $main;
 				text-decoration: underline;
 				display: flex;
 				align-items: center;
 				gap: 4px;
 				&:hover {
-					color: $green;
+					color: $main;
 				}
 			}
 			svg {
@@ -365,11 +368,11 @@
 		&-phone {
 			font-size: 14px;
 			&:hover {
-				color: $light;
+				color: $main;
 			}
 		}
 		&-item {
-			background: $green;
+			background: $black;
 			width: 40px;
 			height: 40px;
 			border-radius: 10px;
@@ -377,14 +380,14 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			&:hover {
-				background: $light;
-				color: $black;
-			}
 			svg {
 				width: 20px;
 				height: 20px;
 			}
+		}
+		&-item + &-item {
+			background: $yellow;
+			color: $black;
 		}
 	}
 	&__head {
@@ -469,7 +472,7 @@
 			display: flex;
 			align-items: center;
 			&.active {
-				color: $light;
+				color: $main;
 				text-decoration: underline;
 			}
 			a {
@@ -509,7 +512,7 @@
 			gap: 8px;
 			a {
 				&:hover {
-					color: $light;
+					color: $main;
 				}
 			}
 		}
@@ -541,7 +544,7 @@
 			color: #878787;
 			font-size: 14px;
 			&:hover {
-				color: $light;
+				color: $main;
 			}
 		}
 		span {
@@ -581,13 +584,13 @@
 			border-radius: 20px;
 			padding: 20px;
 			display: flex;
-			background: $light;
+			background: $green-light;
 			color: $black;
 		}
 		&-face {
 		    width: 60px;
 		    height: 60px;
-		    background: $light;
+		    background: $green;
 		    border-radius: 10px;
 		    display: flex;
 		    justify-content: center;
@@ -622,7 +625,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background: $light;
+			background: $green;
 			border-radius: 10px;
 			position: absolute;
 			bottom: 0;
@@ -698,7 +701,7 @@
 			color: $black;
 			padding: 0;
 			&:hover {
-				background: $light;
+				background: $main;
 			}
 		}
 		svg {
@@ -730,7 +733,7 @@
 			display: flex;
 			align-items: flex-start;
 			&:hover {
-				color: $light;
+				color: $main;
 			}
 		}
 		i {
@@ -770,7 +773,7 @@
 		width: 100%;
 		font-size: 18px;
 		&:hover {
-			color: $light;
+			color: $main;
 		}
 		svg {
 			width: 14px;
@@ -862,7 +865,7 @@
 		display: flex;
 		align-items: center;
 		&:hover {
-			color: $light;
+			color: $main;
 		}
 		span {
 			width: calc(100% - 24px);
@@ -883,7 +886,7 @@
 	&__two {
 		color: #878787;
 		&:hover {
-			color: $light;
+			color: $main;
 		}
 	}
 }
@@ -977,7 +980,7 @@
 		a {
 
 			&:hover {
-				color: $light;
+				color: $main;
 			}
 		}
 	}

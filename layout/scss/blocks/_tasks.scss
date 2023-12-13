@@ -159,12 +159,12 @@
 					display: block;
 				}
 				&:hover {
-					color: $green;
+					color: $main;
 				}
 			}
 		}
 		&_green &-icon {
-			background: $light;
+			background: $main;
 			color: $white;
 		}
 		&_green &-text {

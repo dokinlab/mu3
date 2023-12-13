@@ -107,7 +107,7 @@
 		}
 		&-price {
 			width: 100%;
-			color: $light;
+			color: $main;
 			font-size: 45px;
 			font-weight: 600;
 			margin-top: 20px;
@@ -148,7 +148,7 @@
 				&-label {
 					width: 30px;
 					height: 30px;
-					background: $green;
+					background: $main;
 					display: flex;
 					justify-content: center;
 					align-items: center;

@@ -92,6 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    $('.js-top-item-close').on('click',function(){
+        $('.top-item').hide();
+    });
+
+
     $('.js-scroll-to').bind('click',function(e){
       let anchor = $(this);
       $('html,body').stop().animate({
@@ -110,6 +115,11 @@ document.addEventListener("DOMContentLoaded", () => {
         $('.js-select2').select2();
     }
 
+    if ($('.js-countdown').is('.js-countdown')){
+        $('.js-countdown').countdown('2099/01/01',function(event){
+          $(this).html(event.strftime('%d дня %H:%M:%S'));
+        });
+    }
 
     if ($('.js-slideshow').is('.js-slideshow')){
         let slideshowSwiper = new Swiper ('.js-slideshow', {
@@ -375,6 +385,26 @@ document.addEventListener("DOMContentLoaded", () => {
                     slidesPerView: 2,
                     spaceBetween: 30
                 }
+            }
+        });
+    }
+
+    if ($('.js-hat').is('.js-hat')){
+        let hatSliderSwiper = new Swiper ('.js-hat', {
+            loop: true,
+            navigation: {
+                prevEl: '.js-hat-prev',
+                nextEl: '.js-hat-next',
+            }
+        });
+    }
+
+    if ($('.js-study').is('.js-study')){
+        let studySwiper = new Swiper ('.js-study', {
+            loop: true,
+            navigation: {
+                prevEl: '.js-study-prev',
+                nextEl: '.js-study-next',
             }
         });
     }

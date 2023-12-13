@@ -28,7 +28,7 @@
 			svg {
 				width: 40px;
 				height: 35px;
-				color: $light;
+				color: $main;
 				position: relative;
 				top: 6px;
 				@media (min-width: $tablet) {
@@ -158,7 +158,7 @@
 				color: #878787;
 			}
 			a:hover {
-				color: $green;
+				color: $main;
 			}
 		}
 	}
@@ -295,7 +295,7 @@
 			font-weight: 500;
 			color: #878787;
 			b {
-				color: $light;
+				color: $main;
 				font-weight: 600;
 				font-size: 35px;
 			}

@@ -15,9 +15,11 @@ $transition: 0.3s;
 
 $black:            #141414;
 $white:            #FFFFFF;
-$green:            #0AC964;
-$green-dark:       #1E9054;
-$light:            #ABD7A0;
+$main:             #B9AB91;
+$yellow:           #EBC65D;
+$yellow-two:       #FFBC00;
+$green:            #ABD7A0;
+$green-light:      #E2F8DC;
 
 $rotate180: rotate(180deg);
 .rotate180{transform:rotate(180deg)}
@@ -49,11 +51,11 @@ $shadow: 0px 0px 30px rgba(0, 0, 0, 0.10);
 :focus::-moz-placeholder{color:transparent}
 :focus::placeholder{color:transparent}
 
-::selection{background:$light;color:$black;}
+::selection{background:$main;color:$black;}
 
 ::-webkit-scrollbar{width:4px;height:4px}
 ::-webkit-scrollbar-track{border-radius:999px;background:#E5E5E5}
-::-webkit-scrollbar-thumb{border-radius:999px;background:$light}
+::-webkit-scrollbar-thumb{border-radius:999px;background:$main}
 
 a, button, select{color:inherit}
 a{text-decoration:none}
@@ -117,3 +119,8 @@ img,video{object-fit:cover}
 @import "blocks/since";
 @import "blocks/platform";
 @import "blocks/info";
+@import "blocks/top-item";
+@import "blocks/hat-slider";
+@import "blocks/goals";
+@import "blocks/verify";
+@import "blocks/study";
