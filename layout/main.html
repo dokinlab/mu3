@@ -14,20 +14,6 @@
 </a>
 
 <div> <!-- BEGIN TOP WRAPPER -->
-    <section class="top-item">
-        <div class="container">
-            <div class="top-item__body">
-                <a href="#" class="top-item__link">&nbsp;</a>
-                <button type="button" class="top-item__close js-top-item-close">
-                    <svg><use xlink:href="images/sprite.svg#cross"></use></svg>
-                </button>
-                <div class="top-item__title">Новогодняя распродажа</div>
-                <div class="top-item__price">До 60%</div>
-                <div class="top-item__timer js-countdown"></div>
-                <div class="top-item__more">Узнать больше</div>
-            </div>
-        </div>
-    </section>
     <div class="overlay js-close-all"></div><section class="toper">
         <div class="container">
             <div class="toper__body">
@@ -122,7 +108,9 @@
                     </button>
                     <nav class="header__menu">
                         <a href="#" class="header__menu-item">Главная</a>
-                        <a href="#" class="header__menu-item">Курсы</a>
+                        <a href="#" class="header__menu-item">Услуги</a>
+                        <a href="#" class="header__menu-item">Франшиза</a>
+                        <a href="#" class="header__menu-item">Локация</a>
                     </nav>
                 </div>
                 <div class="header__col">
@@ -437,108 +425,76 @@
             </div>
         </div>
     </section>
-    <section class="hat">
+    <section class="slideshow">
         <div class="container">
-            <div class="swiper js-hat">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="hat__item">
-                            <div class="navs navs_white">
-                                <button type="button" class="js-hat-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                                <button type="button" class="js-hat-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+            <div class="slideshow__wrapper">
+                <div class="swiper js-slideshow">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slideshow__body">
+                                <div class="navs slideshow__navs">
+                                    <button type="button" class="js-slideshow-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                    <button type="button" class="js-slideshow-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                </div>
+                                <div class="slideshow__title">Дистанционная юридическая поддержка для МСБ и крупного бизнеса</div>
+                                <div class="slideshow__text">Подключите юридический отдел по цене одного юриста. Работаем по всей России 24/7 без выходных и праздников.</div>
+                                <div class="slideshow__buttons">
+                                    <a href="#" class="button">Тарифы</a>
+                                    <a href="#" class="button button_lined">Скачать КП</a>
+                                </div>
+                                <img src="images/girl.png" alt="" class="slideshow__man">
+                                <div class="slideshow__chat">
+                                    <div class="slideshow__chat-item">
+                                        <div class="slideshow__chat-cloud">
+                                            <time>14:20</time>
+                                            <b>Анна</b>
+                                            Добрый день. Подскажите, как верно составить претензию к проверке качества товара?
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__chat-item slideshow__chat-item_right">
+                                        <div class="slideshow__chat-cloud slideshow__chat-cloud_black">
+                                            <time>14:25</time>
+                                            <b>Анна</b>
+                                            Здравствуйте, Анна! Подготовил для Вас претензию о проведении проверки качества товара
+                                        </div>
+                                        <img src="images/avatar.jpg" alt="" class="slideshow__chat-avatar">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="hat__title">Юридическая онлайн-школа</div>
-                            <div class="hat__text">Вы сможете самостоятельно изучать материалы в удобное для вас время, а также посещать вебинары и задавать вопросы экспертам в чате</div>
-                            <img src="images/hat.png" alt="" class="hat__pic">
-                            <a href="#" class="button hat__button">46 курсов</a>
-                            <div class="hat__row">
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slideshow__body">
+                                <div class="navs slideshow__navs">
+                                    <button type="button" class="js-slideshow-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                    <button type="button" class="js-slideshow-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
                                 </div>
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
+                                <div class="slideshow__title">Дистанционная юридическая поддержка для МСБ и крупного бизнеса</div>
+                                <div class="slideshow__text">Подключите юридический отдел по цене одного юриста. Работаем по всей России 24/7 без выходных и праздников.</div>
+                                <div class="slideshow__buttons">
+                                    <a href="#" class="button">Тарифы</a>
+                                    <a href="#" class="button button_lined">Скачать КП</a>
                                 </div>
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
+                                <img src="images/men.png" alt="" class="slideshow__man">
+                                <div class="slideshow__chat">
+                                    <div class="slideshow__chat-item">
+                                        <div class="slideshow__chat-cloud">
+                                            <time>14:20</time>
+                                            <b>Анна</b>
+                                            Добрый день. Подскажите, как верно составить претензию к проверке качества товара?
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__chat-item slideshow__chat-item_right">
+                                        <div class="slideshow__chat-cloud slideshow__chat-cloud_black">
+                                            <time>14:25</time>
+                                            <b>Анна</b>
+                                            Здравствуйте, Анна! Подготовил для Вас претензию о проведении проверки качества товара
+                                        </div>
+                                        <img src="images/avatar.jpg" alt="" class="slideshow__chat-avatar">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="hat__item">
-                            <div class="navs navs_white">
-                                <button type="button" class="js-hat-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                                <button type="button" class="js-hat-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                            </div>
-                            <div class="hat__title">Юридическая онлайн-школа</div>
-                            <div class="hat__text">Вы сможете самостоятельно изучать материалы в удобное для вас время, а также посещать вебинары и задавать вопросы экспертам в чате</div>
-                            <img src="images/hat.png" alt="" class="hat__pic">
-                            <a href="#" class="button hat__button">46 курсов</a>
-                            <div class="hat__row">
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
-                                </div>
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
-                                </div>
-                                <div>
-                                    <b>Трудоустройство</b>
-                                    Cильное резюме, партнёрские вакансии и гарантия в договоре
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="goals">
-        <div class="container">
-            <div class="big-title">
-                <div class="big-title__icon-face">
-                    <img src="images/person-white.svg" alt="">
-                </div>
-                <span>Курсы под любые цели</span>
-            </div>
-            <div class="goals__body">
-                <div class="goals__item">
-                    <div>
-                        <div class="goals__item-title">Юридическое право</div>
-                        <div class="goals__item-text">Отказаться от страховки, рефинансировать кредит, вернуть заем по расписке, досрочно погасить кредит</div>
-                        <a href="#" class="button goals__item-button">46 курсов</a>
-                    </div>
-                    <span class="goals__item-pic">
-                        <img src="images/3.jpg" alt="">
-                    </span>
-                </div>
-                <div class="goals__item">
-                    <div>
-                        <div class="goals__item-title">Юридическое право</div>
-                        <div class="goals__item-text">Отказаться от страховки, рефинансировать кредит, вернуть заем по расписке, досрочно погасить кредит</div>
-                        <a href="#" class="button goals__item-button">46 курсов</a>
-                    </div>
-                    <span class="goals__item-pic">
-                        <img src="images/3.jpg" alt="">
-                    </span>
-                </div>
-                <div class="goals__item">
-                    <div>
-                        <div class="goals__item-title">Юридическое право</div>
-                        <div class="goals__item-text">Отказаться от страховки, рефинансировать кредит, вернуть заем по расписке, досрочно погасить кредит</div>
-                        <a href="#" class="button goals__item-button">46 курсов</a>
-                    </div>
-                    <span class="goals__item-pic">
-                        <img src="images/3.jpg" alt="">
-                    </span>
-                </div>
-                <div class="goals__item-2">
-                    <div class="goals__item-2-title">Поможем<br>подобрать курс</div>
-                    <a href="#" class="button goals__item-2-button">Подобрать курс</a>
                 </div>
             </div>
         </div>
@@ -546,18 +502,12 @@
     <section class="things">
         <div class="container">
             <div class="things__body">
-                <div class="big-title">
-                    <div class="big-title__icon-face">
-                        <img src="images/person-white.svg" alt="">
-                    </div>
-                    <span>Почему выбирают нас</span>
-                </div>
                 <div class="swiper js-things">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="things__item">
                                 <div class="things__item-one">
-                                    <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                    <svg><use xlink:href="images/sprite.svg#star"></use></svg>
                                     Компания года
                                 </div>
                                 <div class="things__item-two">
@@ -566,7 +516,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="things__item brown">
+                            <div class="things__item">
                                 <div class="things__item-one">
                                     <svg><use xlink:href="images/sprite.svg#star"></use></svg>
                                     Компания года
@@ -588,7 +538,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="things__item brown">
+                            <div class="things__item">
                                 <div class="things__item-one">
                                     <svg><use xlink:href="images/sprite.svg#star"></use></svg>
                                     Компания года
@@ -610,7 +560,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="things__item brown">
+                            <div class="things__item">
                                 <div class="things__item-one">
                                     <svg><use xlink:href="images/sprite.svg#star"></use></svg>
                                     Компания года
@@ -647,181 +597,229 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="solution">
         <div class="container">
-            <div class="reviews__toper">
+            <div class="solution__wrapper">
                 <div class="big-title">
                     <div class="big-title__icon-face">
                         <img src="images/person-white.svg" alt="">
                     </div>
-                    <span>Что говорят участники курсов</span>
+                    <span>Поручите нам<br>решение любых<br>вопросов</span>
+                </div>
+                <div class="solution__tabs">
+                    <div class="solution__tabs-wrapper">
+                        <button type="button" class="solution__tabs-item js-parent-toggle active">
+                            <svg><use xlink:href="images/sprite.svg#tab-1"></use></svg>
+                            <span>Услуги для юридических лиц</span>
+                        </button>
+                        <button type="button" class="solution__tabs-item js-parent-toggle">
+                            <svg><use xlink:href="images/sprite.svg#tab-2"></use></svg>
+                            <span>Услуги для юридических лиц</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="solution__body">
+                <div class="solution__body-item solution__body-item_i1">
+                    <div class="solution__body-one">
+                        <div>
+                            <div class="solution__body-title">
+                                <span>Банкроство физ лиц</span>
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#justice"></use></svg>
+                                </i>
+                            </div>
+                            <div class="solution__body-text">Отказаться от страховки, рефинансировать кредит, вернуть заем по расписке, досрочно погасить кредит</div>
+                        </div>
+                        <a href="#" class="button">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i2">
+                    <div class="solution__body-one">
+                        <div>
+                            <div class="solution__body-title">
+                                <span>Налоговый вычет</span>
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#people"></use></svg>
+                                </i>
+                            </div>
+                            <div class="solution__body-text">Льготы, предусмотренные в моем регионе, получить пособие на ребенка, льготы для многодетных семей</div>
+                        </div>
+                        <a href="#" class="button">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i3">
+                    <div class="solution__body-one solution__body-one_blue">
+                        <div>
+                            <div class="solution__body-title">
+                                <span>Абоненсткое обслуживание юр лиц</span>
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#justice"></use></svg>
+                                </i>
+                            </div>
+                            <div class="solution__body-text">Отказаться от страховки, рефинансировать кредит, вернуть заем по расписке, досрочно погасить кредит</div>
+                        </div>
+                        <a href="#" class="button button_white">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i4">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i5">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i6">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i7">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i8">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="solution__body-item solution__body-item_i9">
+                    <div class="solution__body-two">
+                        <div>
+                            <div class="solution__body-title">Права потребителей</div>
+                            <div class="solution__body-text">Принуждение к вакцинации работодателем, задерживают зарплату</div>
+                        </div>
+                        <a href="#" class="solution__body-link">
+                            Получить консультацию
+                            <i>
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="callback">
+        <div class="container">
+            <form class="callback__body">
+                <div class="callback__title">Оставьте заявку на консультацию!</div>
+                <div class="callback__subtitle">Наши юристы перезвонят Вам в удобное для Вас время!</div>
+                <input class="input" placeholder="Ваше имя" required>
+                <input type="email" class="input" placeholder="Ваше E-mail" required>
+                <input type="tel" class="input" placeholder="+7 (___) ___-__-__" required>
+                <button type="submit" class="button">Оставить заявку</button>
+                <span class="checkbox">
+                    <label class="checkbox__icon">
+                        <input type="checkbox" checked required>
+                        <span>
+                            <svg><use xlink:href="images/sprite.svg#v"></use></svg>
+                        </span>
+                    </label>
+                    <span class="checkbox__text">
+                        <span>
+                            Cогласен на обработку
+                            <a href="#">персональных данных</a>
+                        </span>
+                    </span>
+                </span>
+            </form>
+        </div>
+    </section>
+    <section class="simple">
+        <div class="container">
+            <div class="simple__toper">
+                <div class="big-title">
+                    <div class="big-title__icon-face">
+                        <img src="images/person-white.svg" alt="">
+                    </div>
+                    <span>Пользоваться нашими<br>сервисами просто</span>
                 </div>
                 <div class="navs">
-                    <button type="button" class="js-reviews-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                    <button type="button" class="js-reviews-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                    <button type="button" class="js-simple-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                    <button type="button" class="js-simple-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
                 </div>
             </div>
-            <div class="swiper js-reviews">
+            <div class="swiper js-simple">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
-                            </a>
+                        <div class="simple__item">
+                            <div class="simple__numb">1</div>
+                            <div class="simple__title">Приобретайте тариф</div>
+                            <div class="simple__text">Выберете подходящий для вас тарифный план или оставьте заявку - наши специалисты помогут бесплатно подобрать наилучшее решение для вас.</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
-                            </a>
+                        <div class="simple__item">
+                            <div class="simple__numb">2</div>
+                            <div class="simple__title">Передайте задачу юристу</div>
+                            <div class="simple__text">Наш сервис доступен 24/7 и без выходных.<br><br>Свяжитесь с нами по телефону 8&nbsp;(800)&nbsp;800-80-80 или задайте вопрос онлайн юристу в личном кабинете.</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
-                            </a>
+                        <div class="simple__item">
+                            <div class="simple__numb">3</div>
+                            <div class="simple__title">Получите результат</div>
+                            <div class="simple__text">Проконсультируем, подготовим документы, защитим интересы компании. Рутинные задачи мы возьмем на себя — вы занимаетесь бизнесом!</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
+                        <div class="simple__item simple__item_black">
+                            <div class="simple__icon">
+                                <img src="images/person-white.svg" alt="">
                             </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__toper">
-                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
-                                <div class="review__toper-body">
-                                    <div class="review__toper-info">
-                                        <b>Иван Сергеевич Грибоедов</b>
-                                        <span>Курс <a href="#">«Юридическое право»</a></span>
-                                    </div>
-                                    <div class="rating">
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
-                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
-                            <a href="#" class="solution__body-link">
-                                Отзыв на Яндексе
-                                <i>
-                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
-                                </i>
+                            <div class="simple__text"><b>Поможем<br>выбрать<br>тариф</b></div>
+                            <a href="#" class="button simple__button">
+                                <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -829,47 +827,206 @@
             </div>
         </div>
     </section>
-    <section class="verify">
+    <section class="tasks">
         <div class="container">
-            <div class="verify__wrapper">
-                <div class="verify__pic">
-                    <img src="images/doc.png" alt="">
+            <div class="tasks__wrapper">
+                <div class="big-title tasks__big-title">
+                    <div class="big-title__icon-face">
+                        <img src="images/person-white.svg" alt="">
+                    </div>
+                    <span>Ставьте задачи юристам<br>в удобной форме</span>
                 </div>
-                <div class="verify__body">
-                    <div class="verify__body-title">Подтверждение ваших навыков</div>
-                    <div class="verify__body-text">Вы получите сертификат установленного образца, который станет дополнительным аргументом для работодателя.</div>
-                    <div class="verify__body-text">Мы обучаем по государственной лицензии <a href="#">№Л035-1 298-77/179 609</a>.</div>
-                    <a href="#" class="button button_white verify__body-button">Посмотреть сертификат</a>
+                <img src="images/phone.jpg" alt="" class="tasks__phone">
+                <div class="tasks__body">
+                    <div class="tasks__body-left">
+                        <div class="tasks__item tasks__item_green">
+                            <div class="tasks__item-icon">
+                                <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                            </div>
+                            <div class="tasks__item-text">
+                                <span>
+                                    В чате мобильного приложения
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tasks__item">
+                            <div class="tasks__item-icon">
+                                <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                            </div>
+                            <div class="tasks__item-text">
+                                <span>
+                                    В чате личного кабинета
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks__body-right">
+                        <div class="tasks__item">
+                            <div class="tasks__item-icon">
+                                <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                            </div>
+                            <div class="tasks__item-text">
+                                <span>
+                                    По телефону
+                                    <a href="#">8&nbsp;(800)&nbsp;800-80-80</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tasks__item">
+                            <div class="tasks__item-icon">
+                                <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                            </div>
+                            <div class="tasks__item-text">
+                                <span>
+                                    Видеозвонок
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tasks__item">
+                            <div class="tasks__item-icon">
+                                <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                            </div>
+                            <div class="tasks__item-text">
+                                <span>
+                                    Почта
+                                    <a href="mailto:info@els24.com">info@els24.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="warning tasks__warning">
+                    <svg><use xlink:href="images/sprite.svg#warning"></use></svg>
+                    <span>Вся история переписки и документов сохраняются</span>
                 </div>
             </div>
         </div>
     </section>
-    <section class="study">
+    <section class="choose">
         <div class="container">
-            <div class="swiper js-study">
+            <div class="choose__body">
+                <div class="choose__left">
+                    <div class="swiper js-choose">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="choose__item">
+                                    <div>
+                                        <div class="navs choose__item-navs">
+                                            <button type="button" class="js-choose-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                            <button type="button" class="js-choose-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                        </div>
+                                        <img src="images/men.png" alt="" class="choose__item-man">
+                                        <div class="choose__item-title">Выберите комплексную юридическую защиту от&nbsp;<span>1350 ₽</span></div>
+                                        <div class="choose__item-text">Выберите тарифный план и получите консультацию уже сейчас!</div>
+                                    </div>
+                                    <a href="#" class="button">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="choose__item">
+                                    <div>
+                                        <div class="navs choose__item-navs">
+                                            <button type="button" class="js-choose-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                            <button type="button" class="js-choose-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                        </div>
+                                        <img src="images/girl.png" alt="" class="choose__item-man">
+                                        <div class="choose__item-title">Выберите комплексную юридическую защиту от&nbsp;<span>1350 ₽</span></div>
+                                        <div class="choose__item-text">Выберите тарифный план и получите консультацию уже сейчас!</div>
+                                    </div>
+                                    <a href="#" class="button">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__right">
+                    <div class="simple__item simple__item_black">
+                        <div class="simple__icon">
+                            <img src="images/person-white.svg" alt="">
+                        </div>
+                        <div class="simple__text"><b>Поможем<br>выбрать<br>тариф</b></div>
+                        <a href="#" class="button simple__button">
+                            <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cases">
+        <div class="container">
+            <div class="cases__toper">
+                <div class="big-title">
+                    <div class="big-title__icon-face">
+                        <img src="images/person-white.svg" alt="">
+                    </div>
+                    <span>Посмотрите вопросы,<br>которые мы уже решили,<br>возможно там есть Ваш</span>
+                </div>
+                <div class="navs">
+                    <button type="button" class="js-cases-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                    <button type="button" class="js-cases-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                </div>
+            </div>
+            <div class="swiper js-cases">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="study__item">
-                            <div class="navs navs_white">
-                                <button type="button" class="js-study-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                                <button type="button" class="js-study-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                        <div class="thing">
+                            <img src="images/1.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
                             </div>
-                            <div class="study__title">Обучающая платформа</div>
-                            <div class="study__text">До открытия площадки в декабре 2022 года продал 33 мероприятия</div>
-                            <img src="images/scrn.jpg" alt="">
-                            <a href="#" class="button study__button">Подключиться</a>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="study__item">
-                            <div class="navs navs_white">
-                                <button type="button" class="js-study-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
-                                <button type="button" class="js-study-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                        <div class="thing">
+                            <img src="images/2.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
                             </div>
-                            <div class="study__title">Обучающая платформа</div>
-                            <div class="study__text">До открытия площадки в декабре 2022 года продал 33 мероприятия</div>
-                            <img src="images/scrn.jpg" alt="">
-                            <a href="#" class="button study__button">Подключиться</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thing">
+                            <img src="images/1.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thing">
+                            <img src="images/2.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thing">
+                            <img src="images/1.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thing">
+                            <img src="images/2.jpg" alt="" class="thing__pic">
+                            <div class="thing__body">
+                                <div class="thing__title">Урегулировали претензию и предотвратили суд</div>
+                                <div class="thing__text">Клиент предоставил знакомому деньги в долг. Что можно сделать, имея расписку, по которой срок возврата займа вышел?</div>
+                                <a href="#" class="button button_silver">Смотреть ответ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -883,7 +1040,7 @@
                     <div class="big-title__icon-face">
                         <img src="images/person-white.svg" alt="">
                     </div>
-                    <span>Преподаватели</span>
+                    <span>В штате более 250<br>квалифицированных юристов</span>
                 </div>
                 <div class="navs">
                     <button type="button" class="js-team-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
@@ -900,8 +1057,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -913,8 +1070,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -926,8 +1083,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -939,8 +1096,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -952,8 +1109,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -965,8 +1122,8 @@
                                 <div class="person__text">Ведущий юрист по жилищному праву</div>
                                 <div class="person__tags">
                                     <span>Стаж: <b>15 лет</b></span>
+                                    <span>Консультаций: <b>>6000</b></span>
                                 </div>
-                                <a href="#" class="button person__button">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -974,9 +1131,358 @@
             </div>
         </div>
     </section>
-    <section class="">
+    <section class="reviews">
         <div class="container">
-
+            <div class="reviews__toper">
+                <div class="big-title">
+                    <div class="big-title__icon-face">
+                        <img src="images/person-white.svg" alt="">
+                    </div>
+                    <span>В штате более 250<br>квалифицированных юристов</span>
+                </div>
+                <div class="navs">
+                    <button type="button" class="js-reviews-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                    <button type="button" class="js-reviews-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                </div>
+            </div>
+            <div class="swiper js-reviews">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review__toper">
+                                <img src="images/avatar.jpg" alt="" class="review__toper-photo">
+                                <div class="review__toper-body">
+                                    <div class="review__toper-info">
+                                        <b>Иван Сергеевич Грибоедов</b>
+                                        <span>Клиент</span>
+                                    </div>
+                                    <div class="rating">
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star-fill"></use></svg>
+                                        <svg><use xlink:href="images/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__text">Чтобы рассчитать сальдо встречных обязательств, стороны представили свои отчеты об оценке рыночной цены предмета лизинга. Суды указали, что согласно сложившейся практике, при расчете сальдо нужно учесть среднюю рыночную цену. Поскольку отчеты отражают разные мнения о цене имущества, то приоритета нет ни у одного из них. Поэтому можно применить среднюю величину между ними.</div>
+                            <a href="#" class="solution__body-link">
+                                Отзыв на Яндексе
+                                <i>
+                                    <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients__toper">
+                <div class="big-title">
+                    <div class="big-title__icon-face">
+                        <img src="images/person-white.svg" alt="">
+                    </div>
+                    <span>Присоединяйтесь к выбору,<br>который сделали наши клиенты<br>со всей страны!</span>
+                </div>
+                <div class="navs navs_white">
+                    <button type="button" class="js-clients-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                    <button type="button" class="js-clients-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                </div>
+            </div>
+            <div class="swiper js-clients">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/1.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video">
+                            <img src="images/2.jpg" alt="">
+                            <button type="button">
+                                <svg><use xlink:href="images/sprite.svg#play"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="container">
+            <div class="swiper js-logos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/logos/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/logos/4.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="faqs">
@@ -986,6 +1492,63 @@
                     <img src="images/person-white.svg" alt="">
                 </div>
                 <span>Частые вопросы</span>
+            </div>
+            <div class="faqs__body">
+                <div class="faqs__body-item">
+                    <button type="button" class="js-toggle">
+                        <span>
+                            <b>Плюсы банкротства через реструктуризацию долгов</b>
+                        </span>
+                        <b>
+                            <span>&plus;</span>
+                            <span>&minus;</span>
+                        </b>
+                    </button>
+                    <div>
+                        <span>Подходит, когда погашение долгов за счет доходов должника невозможно.</span>
+                        <span><b>Плюсы</b> - Долги «замораживаются». Перестают начисляться банковские проценты, пени и штрафы. Кредиторы и коллекторы перестают требовать от вас уплаты долга. </span>
+                    </div>
+                </div>
+                <div class="faqs__body-item">
+                    <button type="button" class="js-toggle">
+                        <span>
+                            <b>Плюсы и минусы банкротства через реализацию имущества</b>
+                        </span>
+                        <b>
+                            <span>&plus;</span>
+                            <span>&minus;</span>
+                        </b>
+                    </button>
+                    <div>
+                        <span>Подходит, когда погашение долгов за счет доходов должника невозможно.</span>
+                        <span><b>Плюсы</b> - Долги «замораживаются». Перестают начисляться банковские проценты, пени и штрафы. Кредиторы и коллекторы перестают требовать от вас уплаты долга. </span>
+                    </div>
+                </div>
+                <div class="faqs__body-item">
+                    <button type="button" class="js-toggle">
+                        <span>
+                            <b>Плюсы банкротства через реструктуризацию долгов</b>
+                        </span>
+                        <b>
+                            <span>&plus;</span>
+                            <span>&minus;</span>
+                        </b>
+                    </button>
+                    <div>
+                        <span>Подходит, когда погашение долгов за счет доходов должника невозможно.</span>
+                        <span><b>Плюсы</b> - Долги «замораживаются». Перестают начисляться банковские проценты, пени и штрафы. Кредиторы и коллекторы перестают требовать от вас уплаты долга. </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faqs">
+        <div class="container">
+            <div class="big-title">
+                <div class="big-title__icon-face">
+                    <img src="images/person-white.svg" alt="">
+                </div>
+                <span>Доп блок</span>
             </div>
             <div class="faqs__body">
                 <div class="faqs__body-item">
@@ -1037,6 +1600,57 @@
                     <div>
                         <span>Подходит, когда погашение долгов за счет доходов должника невозможно.</span>
                         <span><b>Плюсы</b> - Долги «замораживаются». Перестают начисляться банковские проценты, пени и штрафы. Кредиторы и коллекторы перестают требовать от вас уплаты долга. </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose">
+        <div class="container">
+            <div class="choose__body">
+                <div class="choose__left">
+                    <div class="swiper js-choose">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="choose__item">
+                                    <div>
+                                        <div class="navs choose__item-navs">
+                                            <button type="button" class="js-choose-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                            <button type="button" class="js-choose-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                        </div>
+                                        <img src="images/men.png" alt="" class="choose__item-man">
+                                        <div class="choose__item-title">Выберите комплексную юридическую защиту от&nbsp;<span>1350 ₽</span></div>
+                                        <div class="choose__item-text">Выберите тарифный план и получите консультацию уже сейчас!</div>
+                                    </div>
+                                    <a href="#" class="button">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="choose__item">
+                                    <div>
+                                        <div class="navs choose__item-navs">
+                                            <button type="button" class="js-choose-prev"><svg class="rotate180"><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                            <button type="button" class="js-choose-next"><svg><use xlink:href="images/sprite.svg#arrow"></use></svg></button>
+                                        </div>
+                                        <img src="images/girl.png" alt="" class="choose__item-man">
+                                        <div class="choose__item-title">Выберите комплексную юридическую защиту от&nbsp;<span>1350 ₽</span></div>
+                                        <div class="choose__item-text">Выберите тарифный план и получите консультацию уже сейчас!</div>
+                                    </div>
+                                    <a href="#" class="button">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__right">
+                    <div class="simple__item simple__item_black">
+                        <div class="simple__icon">
+                            <img src="images/person-white.svg" alt="">
+                        </div>
+                        <div class="simple__text"><b>Поможем<br>выбрать<br>тариф</b></div>
+                        <a href="#" class="button simple__button">
+                            <svg><use xlink:href="images/sprite.svg#arrow"></use></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1115,12 +1729,17 @@
     </footer>
 </div> <!-- END BOTTOM WRAPPER -->
 
+<div hidden> <!-- BEGIN MODALS WRAPPER -->
+    <div class="modal">
+        modal
+    </div>
+</div> <!-- END MODALS WRAPPER -->
+
 <script src="js/swiper.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/jquery.select2.js"></script>
-<script src="js/jquery.countdown.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

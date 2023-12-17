@@ -22,7 +22,7 @@
 		&-body {
 			display: flex;
 			flex-direction: column;
-			background: $white;
+			background: #F4F4F4;
 			border-radius: 20px 20px 0 0;
 			padding: 40px 20px;
 			gap: 30px;
@@ -72,7 +72,6 @@
 				&-input {
 					width: 100%;
 					height: 80px;
-					border-color: #e5e5e5;
 					font-size: 25px;
 					@media (min-width: $laptop) {
 						font-size: 30px;
@@ -160,7 +159,7 @@
 	&__two {
 		padding: 40px 60px;
 		border-radius: 20px;
-		background: $white;
+		background: #F4F4F4;
 		margin-top: 40px;
 		display: flex;
 		flex-direction: column;

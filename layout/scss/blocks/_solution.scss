@@ -17,7 +17,7 @@
 		}
 		&-wrapper {
 			border-radius: 10px;
-			background: $white;
+			background: #F4F4F4;
 			padding: 10px;
 			display: grid;
 			gap: 10px;
@@ -34,7 +34,7 @@
 				height: calc(100% - 20px);
 				left: 10px;
 				top: 10px;
-				background: #E2F8DC;
+				background: $yellow;
 				border-radius: 10px;
 				transition: $transition;
 			}
@@ -155,7 +155,7 @@
 				font-size: 20px;
 			}
 			@media (min-width: $desktop) {
-				max-width: 340px;
+				padding-right: 120px;
 			}
 			i {
 				width: 60px;
@@ -285,7 +285,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			padding: 20px;
-			background: $white;
+			background: #F4F4F4;
 			border-radius: 20px;
 			color: $black;
 			@media (min-width: $tablet) {

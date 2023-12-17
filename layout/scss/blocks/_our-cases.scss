@@ -1,0 +1,109 @@
+.our-cases {
+	margin-top: 100px;
+	overflow: hidden;
+	&__toper {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding-bottom: 30px;
+		.navs {
+			display: none;
+			@media (min-width: $tablet) {
+				display: flex;
+			}
+		}
+	}
+	.swiper {
+		margin: 0;
+		overflow: visible;
+		width: calc(100% - 40px);
+		@media (min-width: $tablet) {
+			margin: 0;
+			width: 100%;
+		}
+		@media (min-width: $desktop) {
+			width: calc(100% - 80px);
+		}
+	}
+	&__item {
+		position: relative;
+		height: 400px;
+		overflow: hidden;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		color: $white;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			background: linear-gradient(0deg, $black -2.5%, rgba(0, 0, 0, 0) 100%);
+		}
+		> img {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		> span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			padding: 20px;
+			@media (min-width: $desktop) {
+				padding: 30px;
+			}
+		}
+		&-label {
+			font-size: 14px;
+			font-weight: 300;
+			color: #E5E5E5;
+		}
+		&-title {
+			margin-top: 20px;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		&-text {
+			margin-top: 20px;
+			font-size: 14px;
+			b {
+				font-weight: 600;
+			}
+		}
+		&-bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 12px;
+			font-weight: 300;
+			color: #878787;
+			margin-top: 30px;
+			@media (min-width: $desktop) {
+				margin-top: 60px;
+			}
+			> span {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				svg {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+}

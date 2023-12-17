@@ -409,5 +409,52 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    if ($('.js-job').is('.js-job')){
+        let jobSwiper = new Swiper ('.js-job', {
+            spaceBetween: 10,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3
+                },
+                992: {
+                    slidesPerView: 4
+                },
+                1290: {
+                    slidesPerView: 5
+                }
+            }
+        });
+    }
+
+    if ($('.js-our-cases').is('.js-our-cases')){
+        let ourCasesSwiper = new Swiper ('.js-our-cases', {
+            loop: true,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                }
+            },
+            navigation: {
+                prevEl: '.js-our-cases-prev',
+                nextEl: '.js-our-cases-next',
+            }
+        });
+    }
+
+    if ($('#js-nouislider').is('#js-nouislider')){
+        var slider = document.getElementById('js-nouislider');
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+    }
 
 }); // DOMContentLoaded

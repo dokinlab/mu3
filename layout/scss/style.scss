@@ -3,6 +3,7 @@
 @import url(swiper.css);
 @import url(jquery.fancybox.css);
 @import url(jquery.select2.css);
+@import url(nouislider.css);
 
 $tablet:   768px;
 $laptop:   992px;
@@ -124,3 +125,6 @@ img,video{object-fit:cover}
 @import "blocks/goals";
 @import "blocks/verify";
 @import "blocks/study";
+@import "blocks/job";
+@import "blocks/our-cases";
+@import "blocks/courses";
